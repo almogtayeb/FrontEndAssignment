@@ -1,11 +1,15 @@
 @import 'fonts';
 
+@mixin shadow {
+  box-shadow: .25em .25em .25em rgba(#000, 0.15);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #ececec;
+  background: #ececec4f;
 }
 
 .home {
@@ -13,9 +17,9 @@ body {
   width: 520px;
   height: auto;
   margin: 50px auto;
-  background: #fff;
   border-radius: 5px;
-  padding: 15px 50px;
+  background-color: #ffffff8c;
+  @include shadow();
 }
 .accordion {
   border-radius: 5px;
@@ -67,5 +71,15 @@ body {
   -webkit-transition: max-height 0.25s ease-in;
   -o-transition: max-height 0.25s ease-in;
   transition: max-height 0.25s ease-in;
+}
+
+.menu {
+  margin-right: 15px;
+}
+
+.error-msg {
+  height: 30px;
+  text-align: center;
+  color: red;
 }
 /*# sourceMappingURL=index.css.map*/

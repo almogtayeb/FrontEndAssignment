@@ -89,7 +89,7 @@ export default class LoginForm extends React.Component {
               type="password"
             />
           </FormGroup>
-          <span>{this.state.message}</span>
+          <div className='error-msg'>{this.state.message}</div>
           <Button
             block
             bsSize="large"

@@ -23,13 +23,13 @@ class User extends Component {
     return (
       <div className="navigation">
         <div className="menu">
-          <ul>
+          <ul style={{textAlign: 'right', listStyle: 'none'}}>
             <li>
               {loginStatusLink}
             </li>
-            <li>
+            {/* <li>
               <a href="/farms">Farms</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

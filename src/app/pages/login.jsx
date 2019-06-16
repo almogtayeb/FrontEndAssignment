@@ -8,7 +8,7 @@ class Login extends React.Component {
     return (
       <div className="page">
         <Menu />
-        <div className="home">
+        <div className="home" style={{padding: '15px 50px'}}>
             <LoginForm></LoginForm>
         </div>
       </div>
